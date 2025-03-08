@@ -20,4 +20,4 @@ Isi file ditampilkan di sini...
 ^G Get Help  ^O Write Out  ^W Where Is  ^K Cut Text  ^J Justify        
 ^X Exit      ^R Read File  ^\ Replace   ^U Paste Text  ^T To Spell     
 ```
-![Tampilan antarmuka nano](C:\Users\ThinkPad\Downloads\antarmuka.png)
+![Tampilan antarmuka nano](Downloads\antarmuka.png)
