@@ -191,7 +191,18 @@ Menjalankan kode python
 ```bash
 python3 kalkulator.py
 ```
-Hasil  
+**Hasil**  
+*Penjumlahan*  
+![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/tambah.jpg)  
+*Pengurangan*  
+![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/kurang.jpg)  
+*Perkalian*  
+![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/kali.jpg)  
+*Pembagian*  
+![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/bagi.jpg)
+
+
+
 
     
   
