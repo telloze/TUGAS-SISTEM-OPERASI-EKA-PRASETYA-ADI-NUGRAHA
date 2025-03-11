@@ -142,7 +142,7 @@ Membuat file py
 ```bash
 nano kalkulator.py
 ```
-Kode python kalkulator sederhana
+Memasukkan Kode python kalkulator sederhana
 ```bash
 # Kalkulator Sederhana dengan Python
 
@@ -183,6 +183,8 @@ elif pilihan == '4':
 else:
     print("Pilihan tidak valid")
 ```
+  
+![image](https://github.com/user-attachments/assets/318c0182-41cd-444d-ac5c-aa81e03e35ab)
 
 simpan dan keluar dari menu nano  
 *ctrl+x -> y -> enter*
