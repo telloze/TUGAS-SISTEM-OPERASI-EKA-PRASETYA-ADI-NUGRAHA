@@ -136,7 +136,7 @@ bisa di edit dengan
 :wq!
 ```
  ---
-## 📝 4. Kalkulator Sederhana
+## 📝 4. Kalkulator Sederhana nano
 
 Membuat file py 
 ```bash
@@ -201,7 +201,26 @@ python3 kalkulator.py
 *Perkalian*  
 ![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/kali.jpg)  
 *Pembagian*  
-![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/bagi.jpg)
+![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/bagi.jpg)  
+  
+## 📝 4. Kalkulator Sederhana vi
+```bash
+vi kalkulator.py
+```
+Masukkan kode yang sama  
+
+Menjalankan kode python
+```bash
+python3 kalkulator.py
+```
+
+## 📝 5. Kalkulator Sederhana vim
+
+  
+
+
+
+
 
 
 
