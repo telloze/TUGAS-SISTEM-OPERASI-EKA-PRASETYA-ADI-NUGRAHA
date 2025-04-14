@@ -209,6 +209,11 @@ vi kalkulator.py
 ```
 Masukkan kode yang sama  
 
+Keluar dengan 
+```bash
+:wq
+```
+
 Menjalankan kode python
 ```bash
 python3 kalkulator.py
@@ -216,7 +221,20 @@ python3 kalkulator.py
 
 ## 📝 5. Kalkulator Sederhana vim
 
-  
+```bash
+vim kalkulator.py
+```
+Masukkan kode yang sama  
+
+Keluar dengan 
+```bash
+:wq
+```
+
+Menjalankan kode python
+```bash
+python3 kalkulator.py
+```
 
 
 
