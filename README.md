@@ -1,149 +1,172 @@
-# Tugas Sistem Operasi - Linux
+# Tugas Sistem Operasi – Linux Text Editor
 
-## 📌 Deskripsi
-Repository ini berisi penjelasan mengenai editor teks **Nano**, opsi `-v`, editor **Vi**, serta program kalkulator sederhana menggunakan **Nano** di Linux.
+![Linux](https://img.shields.io/badge/Linux-Operating%20System-FCC624?logo=linux&logoColor=black)
+![Nano](https://img.shields.io/badge/Editor-Nano-4EAA25)
+![Vi](https://img.shields.io/badge/Editor-Vi-019733)
+![Vim](https://img.shields.io/badge/Editor-Vim-019733)
+![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)
+
+Repositori ini berisi dokumentasi praktikum Sistem Operasi mengenai penggunaan editor teks berbasis terminal pada Linux, meliputi **GNU Nano, Vi/Vim, opsi `-v`, serta pembuatan program kalkulator sederhana menggunakan Python**.
 
 ---
 
-## 📝 1. Nano
-**Nano** adalah editor teks berbasis terminal yang mudah digunakan di Linux.  
-Untuk membuka file dengan Nano, gunakan perintah:
+## Daftar Isi
+
+1. [Nano Text Editor](#1-nano-text-editor)
+2. [Opsi -v pada Perintah Linux](#2-opsi-v-pada-perintah-linux)
+3. [Vi dan Vim Text Editor](#3-vi-dan-vim-text-editor)
+4. [Kalkulator Python Menggunakan Nano](#4-kalkulator-python-menggunakan-nano)
+5. [Kalkulator Python Menggunakan Vi](#5-kalkulator-python-menggunakan-vi)
+6. [Kalkulator Python Menggunakan Vim](#6-kalkulator-python-menggunakan-vim)
+7. [Kesimpulan](#kesimpulan)
+
+---
+
+## 1. Nano Text Editor
+
+**GNU Nano** merupakan editor teks berbasis terminal yang mudah digunakan di Linux. Nano memiliki antarmuka sederhana dan menampilkan berbagai shortcut pada bagian bawah layar.
+
+### Membuka file
+
 ```bash
-nano nama_file
+nano nama_file.txt
 ```
-Tampilan antarmuka nano
-```bash
-GNU nano 6.2                    nama_file                                
-                                                                       
+
+### Tampilan antarmuka Nano
+
+```text
+GNU nano 6.2                    nama_file
+
 Isi file ditampilkan di sini...
-                                                                       
-^G Get Help  ^O Write Out  ^W Where Is  ^K Cut Text  ^J Justify        
-^X Exit      ^R Read File  ^\ Replace   ^U Paste Text  ^T To Spell     
-```
-Tampilan nano
 
-![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/antarmuka.png)
-*Keterangan:  
-^ berarti tombol Ctrl.  
-Misalnya, ^X berarti tekan Ctrl + X untuk keluar.*  
-  
-**Shortcut**  
-| Pintasan  | Fungsi                          |
-|-----------|---------------------------------|
-| Ctrl + O  | Simpan file (Write Out)        |
-| Ctrl + X  | Keluar dari Nano               |
-| Ctrl + W  | Mencari teks dalam file        |
-| Ctrl + K  | Memotong (cut) baris teks      |
-| Ctrl + U  | Menempelkan (paste) teks       |
-| Ctrl + G  | Menampilkan bantuan (Help)     |
-| Ctrl + R  | Membuka file lain dalam Nano   |
-| Ctrl + T  | Mengecek ejaan dalam teks      |  
+^G Get Help  ^O Write Out  ^W Where Is  ^K Cut Text
+^X Exit      ^R Read File  ^\ Replace   ^U Paste Text
+```
 
-  **Opsi-opsi nano** 
-    
-  Mode read only  
-  ```bash
-nano -v nama_file.txt
-```
-Menampilkan nomor dan baris  
-  ```bash
-nano -c nama_file.txt
-```
-Auto-indent saat mengetik kode  
-  ```bash
-nano -i nama_file.txt
-```
-Mengaktifkan fitur mouse  
-  ```bash
-nano -m nama_file.txt
-```
-Highlight syntax  
-  ```bash
-nano -l nama_file.txt
-```
+![Tampilan antarmuka Nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/antarmuka.png)
+
+*Catatan: Simbol `^` menunjukkan tombol Ctrl. Contohnya, `^X` berarti Ctrl + X.*
+
+### Shortcut Nano
+
+| Shortcut | Fungsi |
+|---|---|
+| `Ctrl + O` | Menyimpan file (Write Out) |
+| `Ctrl + X` | Keluar dari Nano |
+| `Ctrl + W` | Mencari teks |
+| `Ctrl + K` | Memotong satu baris |
+| `Ctrl + U` | Menempelkan teks |
+| `Ctrl + G` | Membuka bantuan |
+| `Ctrl + R` | Membaca atau memasukkan file |
+| `Ctrl + T` | Membuka fitur pemeriksaan ejaan jika tersedia |
+
+### Opsi-opsi Nano
+
+| Opsi | Fungsi | Contoh |
+|---|---|---|
+| `-v` | Membuka file dalam mode view/read-only | `nano -v file.txt` |
+| `-c` | Menampilkan posisi kursor | `nano -c file.txt` |
+| `-i` | Mengaktifkan auto-indent | `nano -i file.txt` |
+| `-m` | Mengaktifkan dukungan mouse | `nano -m file.txt` |
+| `-l` | Menampilkan nomor baris | `nano -l file.txt` |
+| `-V` | Menampilkan informasi versi Nano | `nano -V` |
 
 ---
 
- ## 📝 2. -V  
-Opsi **-v** biasanya berarti *"verbose"* (menampilkan lebih banyak detail). Namun, maknanya bisa berbeda tergantung perintah yang digunakan.  
+## 2. Opsi -v pada Perintah Linux
 
-Menampilkan versi nano  
+Opsi `-v` tidak memiliki fungsi yang sama pada semua perintah Linux. Artinya bergantung pada program yang digunakan.
+
+Berikut beberapa contohnya.
+
+| Perintah | Fungsi |
+|---|---|
+| `nano -v file.txt` | Membuka file dalam mode view |
+| `python -v` | Menampilkan informasi proses import modul Python |
+| `python3 -v` | Menampilkan informasi import pada Python 3 |
+| `ls -v` | Mengurutkan nama file secara natural |
+| `grep -v "error" log.txt` | Menampilkan baris yang tidak cocok dengan pola |
+| `cat -v file.txt` | Menampilkan karakter non-printable secara representatif |
+| `cp -v file1.txt backup/` | Menampilkan informasi proses penyalinan |
+| `chmod -v 755 file.txt` | Menampilkan informasi perubahan permission |
+
+### Menampilkan versi Nano
+
+Untuk melihat versi Nano, gunakan opsi `-V` dengan huruf kapital:
+
 ```bash
 nano -V
 ```
-Menampilkan versi python
-```bash
-python -v
-```
-atau
-```bash
-python3 -v
-```
-Menyortir file secara alami
-```bash
-ls -v
-```
-Menampilkan baris yang tidak cocok
-```bash
-grep -v "error" log.txt
-```
-menampilkan karakter tersembunyi
-```bash
-cat -v file.txt
-```
-Menampilkan perubahan izin file
-```bash
-chmod -v
-```
-Menampilkan detail copy file
-```bash
-cp -v file1.txt backup/
-```
 
-  ---
-    
-## 📝 3. Vi / Vim - Editor Teks yang Lebih Kompleks  
-**Vi** (Visual Editor) adalah editor teks bawaan di Linux yang lebih canggih daripada Nano.
-Versi yang lebih modern dan populer disebut **Vim** (Vi Improved).  
-Membuka file dengan vi
+**Perlu diperhatikan:** `-v` dan `-V` merupakan dua opsi yang berbeda. Penggunaan huruf kecil dan kapital dapat menghasilkan fungsi yang berbeda.
+
+---
+
+## 3. Vi dan Vim Text Editor
+
+**Vi (Visual Editor)** merupakan editor teks berbasis terminal yang tersedia pada berbagai sistem Unix/Linux. Sementara itu, **Vim (Vi Improved)** merupakan pengembangan Vi dengan fitur tambahan.
+
+### Membuka file
+
+Menggunakan Vi:
+
 ```bash
 vi nama_file.txt
 ```
-atau
+
+Menggunakan Vim:
+
 ```bash
 vim nama_file.txt
 ```
 
-Perintah dasar vi
-| Perintah | Fungsi |
-|----------|--------|
-| `i`      | Masuk ke mode Insert (untuk mengetik) |
-| `Esc`    | Kembali ke Normal Mode |
-| `:w`     | Simpan file |
-| `:q`     | Keluar dari Vi |
-| `:wq`    | Simpan dan keluar |
-| `:q!`    | Keluar tanpa menyimpan |
-| `dd`     | Hapus satu baris |
-| `yy`     | Copy satu baris |
-| `p`      | Paste hasil copy |
+### Mode pada Vi/Vim
 
-Vi mode read only
+| Mode | Fungsi |
+|---|---|
+| Normal Mode | Menjalankan perintah navigasi dan pengeditan |
+| Insert Mode | Memasukkan atau mengubah teks |
+| Command-line Mode | Menjalankan perintah seperti menyimpan dan keluar |
+
+### Perintah dasar Vi/Vim
+
+| Perintah | Fungsi |
+|---|---|
+| `i` | Masuk ke Insert Mode |
+| `Esc` | Kembali ke Normal Mode |
+| `:w` | Menyimpan file |
+| `:q` | Keluar dari editor |
+| `:wq` | Menyimpan dan keluar |
+| `:q!` | Keluar tanpa menyimpan |
+| `dd` | Menghapus satu baris |
+| `yy` | Menyalin satu baris |
+| `p` | Menempelkan hasil salinan |
+
+### Mode Read Only
+
+Untuk membuka file dalam mode hanya-baca:
+
 ```bash
 vi -R nama_file.txt
 ```
-bisa di edit dengan
-```bash
-:wq!
-```
- ---
-## 📝 4. Kalkulator Sederhana nano
 
-Membuat file py 
+Mode ini membatasi pengeditan file. Jika ingin menyimpan perubahan, diperlukan izin tulis yang sesuai.
+
+---
+
+## 4. Kalkulator Python Menggunakan Nano
+
+Pada bagian ini dibuat program kalkulator sederhana menggunakan bahasa Python melalui editor Nano.
+
+### Membuat file
+
 ```bash
 nano kalkulator.py
 ```
-Memasukkan Kode python kalkulator sederhana
-```bash
+
+### Source Code
+
+```python
 # Kalkulator Sederhana dengan Python
 
 def tambah(x, y):
@@ -183,68 +206,110 @@ elif pilihan == '4':
 else:
     print("Pilihan tidak valid")
 ```
-  
-![image](https://github.com/user-attachments/assets/318c0182-41cd-444d-ac5c-aa81e03e35ab)
 
-simpan dan keluar dari menu nano  
-*ctrl+x -> y -> enter*
+### Menyimpan dan keluar dari Nano
 
-Menjalankan kode python
+Tekan kombinasi tombol:
+
+```text
+Ctrl + X → Y → Enter
+```
+
+### Menjalankan program
+
 ```bash
 python3 kalkulator.py
 ```
-**Hasil**  
-*Penjumlahan*  
-![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/tambah.jpg)  
-*Pengurangan*  
-![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/kurang.jpg)  
-*Perkalian*  
-![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/kali.jpg)  
-*Pembagian*  
-![Tampilan antarmuka nano](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/bagi.jpg)  
-  
-## 📝 4. Kalkulator Sederhana vi
+
+### Hasil Program
+
+**Penjumlahan**
+
+![Hasil Penjumlahan](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/tambah.jpg)
+
+**Pengurangan**
+
+![Hasil Pengurangan](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/kurang.jpg)
+
+**Perkalian**
+
+![Hasil Perkalian](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/kali.jpg)
+
+**Pembagian**
+
+![Hasil Pembagian](https://github.com/telloze/TUGAS-SISTEM-OPERASI/blob/main/bagi.jpg)
+
+---
+
+## 5. Kalkulator Python Menggunakan Vi
+
+Program kalkulator yang sama juga dapat dibuat menggunakan editor Vi.
+
+### Membuat file
+
 ```bash
 vi kalkulator.py
 ```
-Masukkan kode yang sama  
 
-Keluar dengan 
-```bash
+Masukkan source code kalkulator Python yang telah dijelaskan pada bagian sebelumnya.
+
+### Menyimpan dan keluar
+
+Tekan `Esc`, kemudian ketik:
+
+```vim
 :wq
 ```
 
-Menjalankan kode python
+### Menjalankan program
+
 ```bash
 python3 kalkulator.py
 ```
 
-## 📝 5. Kalkulator Sederhana vim
+---
+
+## 6. Kalkulator Python Menggunakan Vim
+
+Selain Nano dan Vi, program kalkulator juga dapat dibuat menggunakan Vim.
+
+### Membuat file
 
 ```bash
 vim kalkulator.py
 ```
-Masukkan kode yang sama  
 
-Keluar dengan 
-```bash
+Masukkan source code kalkulator Python yang sama.
+
+### Menyimpan dan keluar
+
+Tekan `Esc`, kemudian ketik:
+
+```vim
 :wq
 ```
 
-Menjalankan kode python
+### Menjalankan program
+
 ```bash
 python3 kalkulator.py
 ```
 
+---
 
+## Kesimpulan
 
+Berdasarkan praktikum yang telah dilakukan, dapat disimpulkan bahwa:
 
+1. Nano merupakan editor teks berbasis terminal yang sederhana dan mudah digunakan.
+2. Vi dan Vim menyediakan berbagai mode serta perintah untuk mengedit teks secara efisien.
+3. Opsi `-v` memiliki fungsi yang berbeda bergantung pada perintah Linux yang digunakan.
+4. Program Python dapat dibuat dan diedit menggunakan berbagai editor teks, seperti Nano, Vi, dan Vim.
+5. Program kalkulator sederhana dapat memanfaatkan fungsi, percabangan, input pengguna, serta operasi aritmatika dalam Python.
 
+Melalui praktikum ini, diperoleh pemahaman mengenai penggunaan editor teks Linux dan penerapannya dalam pembuatan program sederhana.
 
+---
 
-
-    
-  
-
-
-
+**Tugas Sistem Operasi – Linux**  
+*Dokumentasi Praktikum Editor Teks dan Pemrograman Python*
